@@ -1,0 +1,184 @@
+个人主页
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e8f4f8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .name {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 12px;
+        }
+        .title {
+            font-size: 1.1rem;
+            color: #4299e1;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+        .intro {
+            font-size: 1rem;
+            color: #4a5568;
+            max-width: 700px;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .skill-tag {
+            background: #e8f4f8;
+            color: #2b6cb0;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .contact {
+            display: flex;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .contact-link {
+            color: #4299e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+        .contact-link:hover {
+            color: #2b6cb0;
+        }
+        .icon {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .profile-card {
+                padding: 40px 20px;
+            }
+            .avatar {
+                width: 140px;
+                height: 140px;
+            }
+            .name {
+                font-size: 1.8rem;
+            }
+            .contact {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+        }
+    </style>
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- 头像 -->
+            <img src="IMG_2664.jpeg" alt="个人头像" class="avatar" onerror="this.src='https://via.placeholder.com/180'; this.alt='默认头像'">
+
+<!-- 姓名 -->
+
+<h1 class="name">李明</h1>
+
+<!-- 职业/标签 -->
+
+<p class="title">产品设计师 | 交互爱好者 | 持续学习者</p>
+
+<!-- 个人简介 -->
+
+<p class="intro">
+                专注产品设计领域5年，擅长从用户需求出发，打造兼具美感与实用性的产品体验。
+                热爱探索新工具与设计方法论，坚信好的设计能解决真实问题。
+                工作之余喜欢徒步、摄影和阅读，始终保持对生活的好奇与热情，
+                期待与更多有趣的人一起碰撞创意、创造价值。
+            </p>
+
+<!-- 技能标签 -->
+
+<div class="skills">
+                <span class="skill-tag">UI/UX设计</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">用户研究</span>
+                <span class="skill-tag">原型设计</span>
+                <span class="skill-tag">交互逻辑</span>
+                <span class="skill-tag">产品思维</span>
+            </div>
+
+<!-- 联系方式 -->
+
+<div class="contact">
+                <a href="mailto:liming@example.com" class="contact-link">
+                    <<i class="fas fa-envelope icon"></</i> 邮箱
+                </a>
+                <a href="https://github.com/liming" target="_blank" class="contact-link">
+                    <<i class="fab fa-github icon"></</i> GitHub
+                </a>
+                <a href="https://www.behance.net/liming" target="_blank" class="contact-link">
+                    <<i class="fab fa-behance icon"></</i> 作品集
+                </a>
+                <a href="tel:13800138000" class="contact-link">
+                    <<i class="fas fa-phone icon"></</i> 电话
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+替换说明：
+
+1. 可直接修改 <h1 class="name"> 中的姓名、<p class="title"> 中的职业标签
+
+2. 简介内容在 <p class="intro"> 中替换为个人真实经历
+
+3. 技能标签在 <div class="skills"> 中增删修改
+
+4. 联系方式替换为自己的邮箱、GitHub、作品集链接等
